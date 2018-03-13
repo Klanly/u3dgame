@@ -6,14 +6,15 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: TestStandardSurfaceMaterial
-  m_Shader: {fileID: 4800000, guid: 819a95c2c93151540aa000c6bdb9035b, type: 3}
+  m_Name: TestStandard
+  m_Shader: {fileID: 4800000, guid: 7905ab0cc1f653e46bddaefd442169a6, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
+  stringTagMap:
+    RenderType: Opaque
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -39,7 +40,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 3e573ef57d138214a932c4b3eb653900, type: 3}
+        m_Texture: {fileID: 2800000, guid: f7529ed036c6fe741b947769bb3de1c6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskControlTex:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -56,7 +61,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
-    - _Cutoff: 0.5
+    - _Cutoff: 0.229
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
@@ -64,13 +69,30 @@ Material:
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
+    - _OccludePower: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _ReflectionFresnel: 2.11
+    - _ReflectionIntensity: 1
+    - _ReflectionMetallic: 0.647
+    - _ReflectionOpacity: 1
+    - _RenderingMode: 0
+    - _RimFresnel: 1
+    - _RimIntensity: 1
+    - _RimLightFresnel: 1
+    - _RimLightIntensity: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _SpecularIntensity: 9.78
+    - _SpecularPower: 10
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _MainColor: {r: 0.3897059, g: 0.3897059, b: 0.3897059, a: 1}
+    - _OccludeColor: {r: 0, g: 0, b: 1, a: 1}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimLightColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
